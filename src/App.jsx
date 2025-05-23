@@ -1,17 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Bookshelf from './components/Bookshelf.jsx';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
   return (
     <>
-    
-   <h1>Hello world!</h1>
- 
-</>
-  )
-  }
+      <h1>My Bookshelf</h1>
+      <h2>Welcome to my bookshelf! Here you can add and view your favorite books.</h2>
+      <h3>Instructions:</h3>
+      <p>1. To add a book, fill in the title and author in the form below.</p>
+      <Bookshelf />
+    </>
+  );
+};
 export default App;
